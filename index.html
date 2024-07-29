@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Probability of Local Recurrence Calculator</title>
+    <title>Probability of Recurrence Calculator</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -61,8 +61,8 @@
     <div class="container">
         <h1>Recurrence Calculator</h1>
         <form id="recurrence-form">
-            <label for="tumorVolume">Tumor Volume (≥100):</label>
-            <input type="number" id="tumorVolume" name="tumorVolume" required>
+            <label for="tumorVolume">Tumor Volume (cm³):</label>
+            <input type="number" id="tumorVolume" name="tumorVolume" placeholder="Enter volume in cm³" required>
 
             <label for="spineLevel">Spine Level:</label>
             <select id="spineLevel" name="spineLevel" required>
@@ -74,12 +74,6 @@
             <select id="neoadjuvantRadiotherapy" name="neoadjuvantRadiotherapy" required>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
-            </select>
-
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender" required>
-                <option value="Female">Female</option>
-                <option value="Male">Male</option>
             </select>
 
             <button type="submit">Calculate Probability</button>
