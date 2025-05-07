@@ -79,11 +79,12 @@
                 <option value="No">No</option>
             </select>
 
-            <!-- Comorbidities -->
-            <label for="comorbidities">Comorbidities:</label>
-            <select id="comorbidities" name="comorbidities" required>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
+            <!-- Charlson Comorbidity Score -->
+            <label for="charlsonComorbidityScore">Charlson Comorbidity Score:</label>
+            <select id="charlsonComorbidityScore" name="charlsonComorbidityScore" required>
+                <option value="0">0 (None)</option>
+                <option value="1">1</option>
+                <option value="2+">2+ (High)</option>
             </select>
 
             <!-- Race -->
@@ -106,4 +107,3 @@
     <script src="calculator.js"></script>
 </body>
 </html>
-
