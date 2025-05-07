@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Probability of Recurrence Calculator</title>
+    <title>Predictors of Prolonged Length of Hospital Stay and 30-Day Readmission Following Surgical Resection of Spinal Chordomas</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -59,22 +59,44 @@
 </head>
 <body>
     <div class="container">
-        <h1>Recurrence Calculator</h1>
+        <h1>Predictors of Prolonged Length of Hospital Stay and 30-Day Readmission</h1>
         <form id="recurrence-form">
+            <!-- Tumor Volume -->
             <label for="tumorVolume">Tumor Volume (cm³):</label>
             <input type="number" id="tumorVolume" name="tumorVolume" placeholder="Enter volume in cm³" required>
 
+            <!-- Spine Level -->
             <label for="spineLevel">Spine Level:</label>
             <select id="spineLevel" name="spineLevel" required>
                 <option value="Mobile">Mobile</option>
                 <option value="Fixed">Fixed</option>
             </select>
 
+            <!-- Neoadjuvant Radiotherapy -->
             <label for="neoadjuvantRadiotherapy">Neoadjuvant Radiotherapy:</label>
             <select id="neoadjuvantRadiotherapy" name="neoadjuvantRadiotherapy" required>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
             </select>
+
+            <!-- Comorbidities -->
+            <label for="comorbidities">Comorbidities:</label>
+            <select id="comorbidities" name="comorbidities" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <!-- Race -->
+            <label for="race">Race:</label>
+            <select id="race" name="race" required>
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <!-- Days from Diagnosis to Surgery -->
+            <label for="daysFromDxToSurgery">Days from Diagnosis to Surgery:</label>
+            <input type="number" id="daysFromDxToSurgery" name="daysFromDxToSurgery" placeholder="Enter number of days" required>
 
             <button type="submit">Calculate Probability</button>
         </form>
