@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predictors of Prolonged Length of Hospital Stay and 30-Day Readmission Following Surgical Resection of Spinal Chordomas</title>
+    <title>Predictors of Prolonged Length of Hospital Stay and 30-Day Readmission Following Surgical Resection for Spinal Chordomas</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -55,11 +55,16 @@
             color: #333;
             margin-top: 20px;
         }
+        p#definition {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Predictors of Prolonged Length of Hospital Stay and 30-Day Readmission</h1>
+        <h1>Predictors of Prolonged Length of Hospital Stay and 30-Day Readmission Following Surgical Resection for Spinal Chordomas</h1>
         <form id="recurrence-form">
             <!-- Tumor Volume -->
             <label for="tumorVolume">Tumor Volume (cm³):</label>
@@ -102,9 +107,9 @@
             <button type="submit">Calculate Probability</button>
         </form>
         <p id="result"></p>
+        <p id="definition">*Prolonged Length of Stay (LOS) is defined as ≥12 days following surgical resection for spinal chordomas.</p>
     </div>
 
     <script src="calculator.js"></script>
 </body>
 </html>
-
